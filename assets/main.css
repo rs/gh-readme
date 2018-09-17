@@ -8,20 +8,38 @@ body {
  */
 
 .readme {
-  margin: 3em;
+  margin: 0;
 }
 
 #nav {
   display: none;
 }
 
-h1 + ul {
-  display: none;
+#fork img {
+  position:absolute;
+  z-index:1000;
+  top:0;
+  right:0;
+  border:0;
+  width:149px;
+  height:149px;
 }
 
 @media only screen and (min-device-width: 736px) and (min-width: 1000px) {
   .readme {
     width: 650px;
+    margin: 3em;
+    margin-left: 20rem;
+    padding: 2rem;
+  }
+
+  #fork img {
+    position:fixed;
+  }  
+
+  /* existing toc */
+  h1 + ul {
+    display: none;
   }
 
   #nav {
@@ -74,23 +92,6 @@ h1 + ul {
     text-shadow: none;
     text-decoration: none;
     background: none;
-  }
-
-  .readme {
-    margin-left: 20rem;
-    padding: 2rem;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  .readme {
-    width: 650px;
-  }
-}
-
-@media only screen and (min-width: 1100px) {
-  .readme {
-    width: 750px;
   }
 }
 
