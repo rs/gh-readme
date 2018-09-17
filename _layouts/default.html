@@ -6,14 +6,11 @@
 {% seo %}
 <link rel="stylesheet" href="{{ '/assets/main.css?v=' | append: site.github.build_revision | relative_url }}">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700%7CRoboto+Mono:400,300,500">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/github.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
 <body>
 <a id="fork" href="{{ site.github.repository_url }}"><img src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-red@2x.png" alt="Fork me on GitHub"></a>
 
-
-<div id="nav"></div>
 <div class="readme">
 {{ content }}
 </div>
@@ -29,7 +26,6 @@ ga('send', 'pageview');
 </script>
 {% endif %}
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="{{ '/assets/nav.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 <script>hljs.initHighlightingOnLoad();</script>  

@@ -1,6 +1,6 @@
 $(function () {
-    var nav = $("<ul>");
-    $("#nav").append(nav);
+    $("body").prepend("<nav><ul>");
+    var nav = $("body > nav > ul");
     var h2;
     $(".readme > h2, .readme > h3").each(function () {
         var item = $('<li><a href="#' + $(this).attr("id") + '">' + $(this).text() + '</a>');
@@ -25,11 +25,11 @@ $(function () {
             ch++;
         }
     }
-    $("#nav > ul > li").each(numberize(""));
+    $("nav > ul > li").each(numberize(""));
 
     // Cache selectors
     var lastId,
-        topMenu = $("#nav > ul"),
+        topMenu = $("nav > ul"),
         // All list items
         menuItems = topMenu.find("a"),
         // Anchors corresponding to menu items
