@@ -15,6 +15,10 @@ body {
   display: none;
 }
 
+h1 + ul {
+  display: none;
+}
+
 @media only screen and (min-device-width: 736px) and (min-width: 1000px) {
   .readme {
     width: 650px;
