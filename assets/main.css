@@ -33,11 +33,22 @@ body {
     padding-top: 1rem;
   }
 
-  #nav ul li {
+  #nav ul {
+    padding-left: 2rem;
+  }
+
+  #nav li {
     font-size: 0.9rem;
     list-style-type: none;
-    margin-left: -1rem;
     margin-top: 0.5em;
+  }
+
+  #nav > ul > li {
+    text-indent: -.8rem;
+  }
+
+  #nav > ul > li > ul > li {
+    text-indent: -1.5rem;
   }
 
   #nav ul li.active {

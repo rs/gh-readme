@@ -22,7 +22,7 @@ This is a normal paragraph following a header. GitHub is a code hosting platform
 >
 > When something is important enough, you do it even if the odds are not in your favor.
 
-### Another sub-section
+### Another sub-section with a long title
 
 ```js
 // Javascript code with syntax highlighting.
@@ -39,7 +39,7 @@ GitHubPages::Dependencies.gems.each do |gem, version|
 end
 ```
 
-## Second Section
+## Second Section with a long title that wraps on two lines
 
 *   This is an unordered list following a header.
 *   This is an unordered list following a header.
