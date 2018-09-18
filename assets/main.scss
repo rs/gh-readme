@@ -45,60 +45,60 @@ nav {
 
   nav {
     font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 300;
-  
+    font-weight: 400;
+    font-size: .95rem;
+
     display: block;
     position: fixed;
     top: 0;
     left: 0;
     margin: 0;
+    padding: 2em 0 0 0;
     width: 17rem;
     height: 100%;
     overflow: auto;
     background-color: #2d2d2d;
-    padding: 1rem 1rem 0 0;
 
     ul {
-      padding: .2rem 0 0 2rem;
       margin: 0;
+      padding: 0;
+    }
+  
+    li {
+      list-style-type: none;
+      padding: .3rem 0 .2rem 0;
 
-      li.active {
-        background-color: #6c2022;
-        ul {
-          background-color: #2d2d2d;
-        }
-      }
-
-      li {
-        font-size: .95rem;
-        list-style-type: none;
-        margin: 0 0 0 0;
-        padding: .1rem 0 .2rem 0;
-
-        ul {
-          position: relative;
-          top: .2rem;    
-        }
-      
-        .secnum {
-          color: #777;
-          font-size: 0.85rem;
-        }
-
-        a, a:visited {
-          color: white;
-          text-shadow: none;
-          text-decoration: none;
-          background: none;
+      &.active {
+        background-color: white;
+        > a, > a:visited {
+          color: black;
         }
       }
     }
 
+    a, a:visited {
+      color: #eee;
+      text-shadow: none;
+      text-decoration: none;
+      background: none;
+    }
+  
     > ul > li {
-      text-indent: -.8rem;
-      
-      > ul > li {
-        text-indent: -1.5rem;
+      > a {
+        display: block;
+        margin: 0 .5rem 0 .5rem;
+      }
+      > ul {
+        background-color: #2d2d2d;
+
+        > li {
+          margin-bottom: -.2rem;
+
+          > a {
+            display: block;
+            margin: 0 .5rem 0 2rem;
+          }
+        }
       }
     }
   }
@@ -107,13 +107,13 @@ nav {
 /**
  * Typography
  */
-.readme,
-.readme p {
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
-}
 
 .readme {
+  &, p {
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;  
+  }
+
   pre,
   code {
     font-family: 'Roboto Mono', monospace;
