@@ -21,13 +21,13 @@ nav {
 }
 
 #fork img {
-  position:absolute;
-  z-index:1000;
-  top:0;
-  right:0;
-  border:0;
-  width:149px;
-  height:149px;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  border: 0;
+  width: 149px;
+  height: 149px;
 }
 
 @media only screen and (min-device-width: 736px) and (min-width: 1000px) {
@@ -37,10 +37,6 @@ nav {
     margin-left: 20rem;
     padding: 2rem;
   }
-
-  #fork img {
-    position:fixed;
-  }  
 
   /* existing toc */
   h1 + ul {
